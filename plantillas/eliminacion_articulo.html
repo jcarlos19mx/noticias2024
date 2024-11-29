@@ -1,0 +1,10 @@
+<!-- plantillas/eliminacion_articulo.html -->
+ {% extends 'base.html' %}
+
+ {% block contenido %}
+ <h1>Eliminación</h1>
+ <form action="" method="post">{% csrf_token %}
+  <p>¿Está completamente seguro de eliminar "<strong>{{ articulo.titulo }}</strong>"</p>
+  <button class="btn btn-danger ml-2" type="submit">Estoy de acuerdo</button>
+ </form>
+ {% endblock contenido %}
